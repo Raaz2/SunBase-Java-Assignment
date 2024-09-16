@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Auth</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Admin Authentication</h2>
+        <form id="authForm">
+            <input type="text" id="loginId" placeholder="Login ID" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <div>
+                <label>
+                    <input type="radio" name="action" value="register" checked> Register
+                </label>
+                <label>
+                    <input type="radio" name="action" value="login"> Login
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

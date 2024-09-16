@@ -1,0 +1,124 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FDFEFE;
+    color: #2C3E50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #2C3E50 40%, #ECF0F1 100%);
+  }
+  
+  /* Auth Container */
+  .auth-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    border: 2px solid #3498DB; /* Accent color */
+  }
+  
+  .auth-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #E74C3C; /* Accent color */
+    text-transform: uppercase;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form input {
+    padding: 12px 15px;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    background-color: #ECF0F1; /* Secondary color */
+    color: #2C3E50;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s ease, background-color 0.3s ease;
+  }
+  
+  form input:focus {
+    border: 1px solid #3498DB; /* Accent color */
+    background-color: #FFFFFF; /* Lightens on focus */
+  }
+  
+  form div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  form label {
+    font-size: 14px;
+    color: #2C3E50;
+  }
+  
+  form button {
+    background-color: #E74C3C; /* Accent color */
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #C0392B; /* Darker red on hover */
+    transform: translateY(-2px);
+  }
+  
+  /* Radio Buttons */
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  form div label {
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  form div input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #3498DB; /* Accent color */
+  }
+  
+  /* Extra Styling for Shadow & Borders */
+  form input, form button {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input:focus {
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.6);
+  }
+  
+  /* Footer Note for Styling */
+  .auth-container::after {
+    content: 'Secure Admin Portal';
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #BDC3C7;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .auth-container {
+      width: 90%;
+      padding: 30px;
+    }
+  }
+  
